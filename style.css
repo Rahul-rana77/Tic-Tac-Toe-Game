@@ -1,0 +1,78 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: rgb(33, 33, 33);
+    font-family: Arial, sans-serif;
+}
+h2,h1{
+    color: #f0f0f0;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 20px;
+}
+.container{
+    width: 50Vw;
+    height: 50Vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+#game-board{
+    width: 40vmin;
+    height: 40vmin;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.btn{
+    width: 10vmin;
+    height: 10vmin;
+    margin: 5px;
+    font-size: 2em;
+    cursor: pointer;
+    background-color: #f2f5a8;
+    border: none;
+    border-radius: 10px;
+}
+#reset{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #fbfbc4;
+}
+#reset:hover{
+    background-color:#a2a2a2;
+}
+@media screen and (max-width: 600px) {
+    .container {
+        width: 85vw;
+        height: 60vh;
+    }
+    #game-board {
+        width: 80vw;
+        height: 80vw;
+    }
+    .btn {
+        width: 20vw;
+        height: 20vw;
+        font-size: 3em;
+    }
+    h1, h2 {
+        font-size: 2em;
+    }
+    
+}
